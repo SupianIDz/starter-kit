@@ -86,6 +86,14 @@ const config = {
 				source: '/api/collect',
 				destination: `${ADVANCED_ANALYTICS_BASE_URL}/api/collect`,
 			},
+       {
+        source: "/blog",
+        destination: "https://starter-kit-tau-seven.vercel.app/blog", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://starter-kit-tau-seven.vercel.app/blog/:path*", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+      },
 		];
 	},
 	async redirects() {
